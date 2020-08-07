@@ -9,32 +9,25 @@ public class Vetor1 {
 		
 		Scanner tc = new Scanner(System.in);
 		
-		int num = 0;
+		int[] vet = new int[15];
 		
-		int[] vet = new int[5];
-		for(int i = 0; i <= 5; i++) {
-	    
-			System.out.println("Informe o " + (i+1) + "º número: ");
-			vet[i] = tc.nextInt();
+		
+			System.out.println("Digite números distintos:");
+			for (int j = 0; j < vet.length; j++) {
+				
+			System.out.print("Informe o " + (j + 1) + "º número: ");
+			vet[j] = tc.nextInt();
 			
-//			for (int j = 0; j < vet.length; j++) {
-//				if(num == vet[j]) {
-//					System.out.println("Informe o "+(j)+"º número novamente" );
-//					vet[j] = tc.nextInt();
-//				}
-//				
-//			 num = vet[i];
-//			
-//			}
-//			
-		}
-		//for(int i = 0; i < vet.length; i++) {
+			for (int i = j-1; i >= 0; i--) {
+				if(vet[i] == vet[j]) {
+					System.out.println("Informe o número novamente: ");
+					vet[j] = tc.nextInt();
+				}
+				
+			}
+			}
 			
-		//}
-		for (int j = 0; j < vet.length; j++) {
-			
-		System.out.printf("Números: %d", vet[j]);
-		}
+		
 		tc.close();
 	}
 

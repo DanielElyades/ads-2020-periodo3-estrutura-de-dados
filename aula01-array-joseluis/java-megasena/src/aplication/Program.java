@@ -13,26 +13,28 @@ import java.util.TimeZone;
 
 public class Program {
 
+	//private static final char[] Number = null;
+
 	public static void main(String[] args) {
 		
 	final SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 	Date date = new Date();
-	df.setTimeZone(TimeZone.getTimeZone("Brasil/Brasilia"));
+//	df.setTimeZone(TimeZone.getDefault());
 	
 		//Scanner tc = new Scanner(System.in);
 		//Number number = new Number();
 		List<Number> list = new ArrayList<>();
 		
-		for (int i = 0; i < 59; i++) {
+		for (int i = 1; i < 60; i++) {
 			list.add(i);
 		}
 		Collections.shuffle(list);
 		
-		System.out.println("Resultado da megasena");
-		System.out.println("Dia do sorteio\n" + df.format(date));
-		
+		System.out.println("--- RESULTADO DA MEGASENA ---\n");
+		System.out.println("--- Data/Hora do sorteio--- \n    " + df.format(date)+"\n");
+	    System.out.println("--- NÚMEROS SORTEADOS ---");
 		for (int i = 0; i < 6; i++) {
-		System.out.print(list.get(i)+" ");
+		System.out.print("   " + list.get(i));
 			
 		}
 	}

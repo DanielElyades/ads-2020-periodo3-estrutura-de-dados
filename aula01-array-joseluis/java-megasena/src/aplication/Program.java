@@ -9,20 +9,17 @@ import java.util.TimeZone;
 
 
 
-//import java.util.Scanner;
+
 
 public class Program {
 
-	//private static final char[] Number = null;
-
+	
 	public static void main(String[] args) {
 		
 	final SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 	Date date = new Date();
-//	df.setTimeZone(TimeZone.getDefault());
 	
-		//Scanner tc = new Scanner(System.in);
-		//Number number = new Number();
+
 		List<Number> list = new ArrayList<>();
 		
 		for (int i = 1; i < 60; i++) {

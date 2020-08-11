@@ -1,4 +1,4 @@
-package aplication;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -8,10 +8,7 @@ import java.util.List;
 import java.util.TimeZone;
 
 
-
-
-
-public class Program {
+public class Exercicio2Megasena {
 
 	
 	public static void main(String[] args) {

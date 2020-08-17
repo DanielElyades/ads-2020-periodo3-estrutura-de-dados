@@ -14,7 +14,7 @@ public class Program {
 			
 			vet[i] = min + (int)( Math.random() * (max - min));
 			
-		System.out.println((i + 1) + "ª nota " + vet[i]);
+		System.out.println((i + 1) + "ª nota: " + vet[i]);
 		
 		if(vet[i] >= 0 && vet[i] <= 9) {
 			one++;
